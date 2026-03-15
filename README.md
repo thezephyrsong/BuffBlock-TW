@@ -30,6 +30,7 @@ Use /sbb or /buffblock in-game to access the context menu to enable/disable bene
 - Greater Blessing of Wisdom
 - Blessing of Sanctuary
 - Greater Blessing of Sanctuary
+- Great Blessing of Light (BoL shares a texture with Greated Arcane Proctection which would be an issue)
 
 **Notes**
 
