@@ -27,7 +27,7 @@
 	<Frame name="BuffBlockOptions" toplevel="true" movable="true" parent="UIParent" enableMouse="true" hidden="true">
 		<TitleRegion setAllPoints="true"/>
 		<Size>
-			<AbsDimension x="225" y="455" />
+			<AbsDimension x="225" y="480" />
 		</Size>
 		<Anchors>
 			<Anchor point="CENTER" />
@@ -359,7 +359,7 @@
 					</OnClick>
 				</Scripts>
 			</CheckButton>
-			<CheckButton name="SmartTankingCheckbox" inherits="BuffBlockCheckboxTemplate">
+			<CheckButton name="GreaterBlessingOfLightCheckbox" inherits="BuffBlockCheckboxTemplate">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="GreaterBlessingOfSanctuaryCheckbox">
 						<Offset>
@@ -373,6 +373,23 @@
 					</OnShow>
 					<OnClick>
 						BuffBlock_SetOption(13);
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="SmartTankingCheckbox" inherits="BuffBlockCheckboxTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="GreaterBlessingOfLightCheckbox">
+						<Offset>
+							<AbsDimension x="0" y="-25" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnShow>
+						BuffBlock_GetOption(14);
+					</OnShow>
+					<OnClick>
+						BuffBlock_SetOption(14);
 					</OnClick>
 				</Scripts>
 			</CheckButton>
